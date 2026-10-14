@@ -1,0 +1,36 @@
+body {
+    background-color: #1f0000;
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    text-align: center;
+}
+
+h1 {
+    color: #ff0000;
+}
+
+h2 {
+    color: #d69b5b;
+}
+
+p {
+    font-size: 18px;
+}
+
+img {
+    width: 300px;
+}
+
+a {
+    color: #e0a458;
+}
+
+button {
+    background-color: #ff0000;
+    color: white;
+    padding: 12px;
+}
+
+button:hover {
+    background-color: #ff0000;
+}

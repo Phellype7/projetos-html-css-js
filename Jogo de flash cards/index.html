@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Cards</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <h1>Flash Cards - Programação</h1>
+
+    <div class="container">
+
+        <div class="cartao">
+            <p class="pergunta">O que é HTML?</p>
+            <p class="resposta" hidden>
+                É uma linguagem de marcação usada para estruturar páginas web.
+            </p>
+            <button onclick="exibirResposta(this)">Exibir resposta</button>
+            <button onclick="exibirPergunta(this)">Exibir pergunta</button>
+        </div>
+
+        <div class="cartao">
+            <p class="pergunta">O que é CSS?</p>
+            <p class="resposta" hidden>
+                É uma linguagem usada para estilizar páginas web.
+            </p>
+            <button onclick="exibirResposta(this)">Exibir resposta</button>
+            <button onclick="exibirPergunta(this)">Exibir pergunta</button>
+        </div>
+
+        <div class="cartao">
+            <p class="pergunta">O que é JavaScript?</p>
+            <p class="resposta" hidden>
+                É uma linguagem de programação usada para adicionar interatividade às páginas.
+            </p>
+            <button onclick="exibirResposta(this)">Exibir resposta</button>
+            <button onclick="exibirPergunta(this)">Exibir pergunta</button>
+        </div>
+
+        <div class="cartao">
+            <p class="pergunta">O que é uma variável?</p>
+            <p class="resposta" hidden>
+                É um espaço utilizado para armazenar um valor.
+            </p>
+            <button onclick="exibirResposta(this)">Exibir resposta</button>
+            <button onclick="exibirPergunta(this)">Exibir pergunta</button>
+        </div>
+
+        <div class="cartao">
+            <p class="pergunta">O que é um algoritmo?</p>
+            <p class="resposta" hidden>
+                É uma sequência de instruções para resolver um problema.
+            </p>
+            <button onclick="exibirResposta(this)">Exibir resposta</button>
+            <button onclick="exibirPergunta(this)">Exibir pergunta</button>
+        </div>
+
+    </div>
+
+    <script>
+        function exibirResposta(botao) {
+            const cartao = botao.parentElement;
+            cartao.querySelector(".pergunta").hidden = true;
+            cartao.querySelector(".resposta").hidden = false;
+        }
+
+        function exibirPergunta(botao) {
+            const cartao = botao.parentElement;
+            cartao.querySelector(".pergunta").hidden = false;
+            cartao.querySelector(".resposta").hidden = true;
+        }
+    </script>
+
+</body>
+</html>

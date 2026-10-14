@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f4f7;
+    color: #222;
+}
+
+
+
+header {
+    background-color: #151b2b;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+
+
+nav {
+    background-color: #242c3d;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: left;
+    align-items:left;
+}
+
+nav a {
+    display: block;
+
+    color: white;
+    text-decoration: none;
+
+    padding: 16px 25px;
+
+    font-size: 16px;
+}
+
+nav a:hover {
+    background-color: #4169e1;
+}
+
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 15px;
+
+    display: flex;
+    gap: 25px;
+
+    align-items: flex-start;
+}
+
+
+
+.sidebar {
+    width: 240px;
+    min-width: 240px;
+
+    height: 900px;
+    min-height: 900px;
+
+    background-color: #e3e7ed;
+
+    padding: 20px;
+}
+
+.sidebar h2 {
+    color: #151b2b;
+
+    font-size: 20px;
+
+    margin-bottom: 15px;
+
+    padding-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 10px 0;
+}
+
+
+.sidebar a {
+    color: #333;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+.sidebar a:hover {
+    color: #4169e1;
+}
+
+
+
+.produtos {
+    flex: 1;
+}
+
+.produtos > h2 {
+    color: #151b2b;
+
+    font-size: 25px;
+
+    margin-bottom: 20px;
+}
+
+
+
+.lista-produtos {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+
+.produto {
+    background-color: white;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.produto img {
+    width: 100%;
+    height: 190px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+}
+
+.produto h3 {
+    font-size: 17px;
+
+    min-height: 42px;
+
+    margin-bottom: 10px;
+}
+
+
+
+.preco-antigo {
+    color: #888;
+
+    font-size: 14px;
+
+    text-decoration: line-through;
+
+    margin-bottom: 5px;
+}
+
+.preco-atual {
+    color: #4169e1;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+.pagamento {
+    color: #555;
+
+    font-size: 13px;
+
+    margin-bottom: 15px;
+}
+
+
+
+.produto button {
+    border: none;
+
+    background-color: #4169e1;
+
+    color: white;
+
+    padding: 12px;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: auto;
+}
+
+.produto button:hover {
+    background-color: #3154b3;
+}
+
+
+footer {
+    background-color: #151b2b;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 30px;
+}
+
+
+@media (max-width: 950px) {
+
+    .lista-produtos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sidebar {
+        width: 210px;
+        min-width: 210px;
+        height: 260px;
+        min-height: 260px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+
+    header {
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    nav a {
+        padding: 13px;
+
+        border-bottom: 1px solid #394154;
+    }
+
+
+    .container {
+        width: 94%;
+
+        margin: 20px auto;
+
+        flex-direction: column;
+    }
+
+
+    .sidebar {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .sidebar h2 {
+        text-align: center;
+    }
+
+
+    .produtos {
+        width: 100%;
+    }
+
+    .produtos > h2 {
+        text-align: center;
+
+        font-size: 22px;
+    }
+
+
+    .lista-produtos {
+        grid-template-columns: 1fr;
+    }
+
+
+    .produto img {
+        height: 220px;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    .produto img {
+        height: 190px;
+    }
+}
