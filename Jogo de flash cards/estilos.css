@@ -1,13 +1,13 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #e9e9e9;
     margin: 0;
     padding: 20px;
     text-align: center;
 }
 
 h1 {
-    color: #333;
+    color: #131313;
 }
 
 .container {
@@ -32,7 +32,7 @@ h1 {
 }
 
 button {
-    background-color: #6c4ccf;
+    background-color: #532dc5;
     color: white;
     border: none;
     padding: 10px;
@@ -42,5 +42,5 @@ button {
 }
 
 button:hover {
-    background-color: #5035a5;
+    background-color: #240985;
 }

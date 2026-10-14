@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flash Cards</title>
     <link rel="stylesheet" href="estilos.css">
+    <script src="script.js" defer></script>
 </head>
-
 <body>
+
     <h1>Flash Cards - Programação</h1>
 
     <div class="container">
@@ -15,7 +16,7 @@
         <div class="cartao">
             <p class="pergunta">O que é HTML?</p>
             <p class="resposta" hidden>
-                É uma linguagem de marcação usada para estruturar páginas web.
+                O HTML (HyperText Markup Language, ou Linguagem de Marcação de Hipertexto) é a linguagem padrão utilizada para criar e estruturar páginas na internet.
             </p>
             <button onclick="exibirResposta(this)">Exibir resposta</button>
             <button onclick="exibirPergunta(this)">Exibir pergunta</button>
@@ -24,7 +25,7 @@
         <div class="cartao">
             <p class="pergunta">O que é CSS?</p>
             <p class="resposta" hidden>
-                É uma linguagem usada para estilizar páginas web.
+                 (Cascading Style Sheets, ou Folhas de Estilo em Cascata) é uma linguagem de estilo usada para definir a aparência e o design de páginas da web escritas em HTML ou XML.
             </p>
             <button onclick="exibirResposta(this)">Exibir resposta</button>
             <button onclick="exibirPergunta(this)">Exibir pergunta</button>
@@ -33,7 +34,7 @@
         <div class="cartao">
             <p class="pergunta">O que é JavaScript?</p>
             <p class="resposta" hidden>
-                É uma linguagem de programação usada para adicionar interatividade às páginas.
+                É uma linguagem de programação que adiciona interatividade às páginas.
             </p>
             <button onclick="exibirResposta(this)">Exibir resposta</button>
             <button onclick="exibirPergunta(this)">Exibir pergunta</button>
@@ -58,20 +59,6 @@
         </div>
 
     </div>
-
-    <script>
-        function exibirResposta(botao) {
-            const cartao = botao.parentElement;
-            cartao.querySelector(".pergunta").hidden = true;
-            cartao.querySelector(".resposta").hidden = false;
-        }
-
-        function exibirPergunta(botao) {
-            const cartao = botao.parentElement;
-            cartao.querySelector(".pergunta").hidden = false;
-            cartao.querySelector(".resposta").hidden = true;
-        }
-    </script>
 
 </body>
 </html>
