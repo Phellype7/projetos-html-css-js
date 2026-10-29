@@ -1,0 +1,45 @@
+
+body {
+    font-family: Arial;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+input, select, button {
+    padding: 10px;
+    margin: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+section {
+    width: 280px;
+    min-height: 200px;
+    border-radius: 8px;
+}
+
+.pendente {
+    background-color: lightgray;
+}
+
+.andamento {
+    background-color: yellow;
+}
+
+.concluida {
+    background-color: lightgreen;
+}
+
+li {
+    margin: 10px;
+    text-align: left;
+}
+
+#contador {
+    color: red;
+}
